@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Typography */
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: color 0.3s ease-in-out;
+}
+
+.hero-title:hover {
+    color: #e2b2be;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: color 0.3s ease-in-out;
+}
+
+.hero-subtitle:hover {
+    color: #08d9d6;
+}
+
+/* Typing Effect */
+.typed-text {
+    color: #98dddf;
+}
+.cursor {
+    font-weight: bold;
+    color: #e9d4d9;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Glowing Button */
+.hero-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.3s;
+    box-shadow: 0 0 10px rgba(23, 3, 8, 0.5);
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(182, 157, 163, 0.8);
+}
+
+/* Floating Background Effects */
+.floating-circle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s infinite ease-in-out alternate;
+}
+
+/* Random floating movement */
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(15deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* Parallax Scrolling */
+.hero {
+    background-attachment: fixed;
+}
